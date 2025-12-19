@@ -1495,7 +1495,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 426f0f91f8527f54eb7c0cfa9aed9a74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NewMonoBehaviourScript
-  speed: 25
+  vehicle_speed: 5
+  turn_speed: 3
+  input_horizontal: 0
 --- !u!54 &2128948209
 Rigidbody:
   m_ObjectHideFlags: 0
