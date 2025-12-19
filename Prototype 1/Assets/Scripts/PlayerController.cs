@@ -25,6 +25,6 @@ public class NewMonoBehaviourScript : MonoBehaviour
         transform.Translate(Vector3.forward * Time.deltaTime * vehicle_speed * input_vertical);
 
         // Turn the vehicle
-        transform.Translate(Vector3.right * Time.deltaTime * turn_speed * input_horizontal);
+        transform.Rotate(Vector3.up, Time.deltaTime * turn_speed * input_horizontal);
     }
 }
