@@ -7,6 +7,7 @@ public class NewMonoBehaviourScript : MonoBehaviour
     public float turn_speed;
 
     public float input_horizontal;
+    public float input_vertical;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -18,9 +19,10 @@ public class NewMonoBehaviourScript : MonoBehaviour
     void Update()
     {
         input_horizontal = Input.GetAxis("Horizontal");
+        input_vertical = Input.GetAxis("Vertical");
 
         // Move vehicle forward
-        transform.Translate(Vector3.forward * Time.deltaTime * vehicle_speed);
+        transform.Translate(Vector3.forward * Time.deltaTime * vehicle_speed * input_vertical);
 
         // Turn the vehicle
         transform.Translate(Vector3.right * Time.deltaTime * turn_speed * input_horizontal);
