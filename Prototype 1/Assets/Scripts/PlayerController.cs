@@ -3,7 +3,7 @@ using UnityEngine;
 public class NewMonoBehaviourScript : MonoBehaviour
 {
     // Variables
-    public float speed = 5.0f;
+    public float speed = 5.0f; // Speed variable for vehicle movement
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
