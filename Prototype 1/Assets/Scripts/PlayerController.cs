@@ -3,11 +3,11 @@ using UnityEngine;
 public class NewMonoBehaviourScript : MonoBehaviour
 {
     // Variables
-    public float vehicle_speed = 5.0f;
-    public float turn_speed;
+    private float vehicle_speed = 20.0f;
+    private float turn_speed = 35.0f;
 
-    public float input_horizontal;
-    public float input_vertical;
+    private float input_horizontal;
+    private float input_vertical;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -18,6 +18,7 @@ public class NewMonoBehaviourScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // Initialize inputs
         input_horizontal = Input.GetAxis("Horizontal");
         input_vertical = Input.GetAxis("Vertical");
 
