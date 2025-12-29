@@ -1158,9 +1158,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100002, guid: af29f0ea7e5403641b3b244ede69c374, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1421178569}
-    - targetCorrespondingSourceObject: {fileID: 100000, guid: af29f0ea7e5403641b3b244ede69c374, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1435163459}
   m_SourcePrefab: {fileID: 100100000, guid: af29f0ea7e5403641b3b244ede69c374, type: 3}
 --- !u!1 &1381306424
 GameObject:
@@ -1239,23 +1236,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!1 &1435163455 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 100000, guid: af29f0ea7e5403641b3b244ede69c374, type: 3}
-  m_PrefabInstance: {fileID: 1302866384}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1435163459
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1435163455}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 191019d4ccb3ebb4ca8c1d9ee8355f7a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PropellorController
 --- !u!1001 &1544215238
 PrefabInstance:
   m_ObjectHideFlags: 0
