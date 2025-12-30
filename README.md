@@ -18,3 +18,6 @@ General Scene View Shortcuts
 Creating a script for an object:
 1. In the Scripts folder, Right-click > Create > Monobehaviour Script
 2. Drag the script onto the appropriate object
+
+Importing an asset package:
+1. In window toolbar, Assets > Import Package > Custom Package...
