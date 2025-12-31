@@ -21,3 +21,9 @@ Creating a script for an object:
 
 Importing an asset package:
 1. In window toolbar, Assets > Import Package > Custom Package...
+
+Enable Input Manager on Unity 6.1+ (Now using Input System):
+1. From the main menu, select Edit > Project Settings, then select the Player category from the leftmost panel
+2. Find the Configuration section
+3. From the Active Input Handling dropdown, select Both
+4. Select the Apply button to confirm the change. The editor will reset
