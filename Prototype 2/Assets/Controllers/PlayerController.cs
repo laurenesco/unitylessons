@@ -2,7 +2,9 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    private float horizontal_input;
+    public GameObject prefab_projectile;
+    
+    private float input_horizontal;
     private float speed = 17f;
     private float x_boundary = 16;
 
@@ -15,9 +17,13 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        ///
+        // Movement Logic
+        ///
+
         // Process horizontal input
-        horizontal_input = Input.GetAxis("Horizontal");
-        transform.Translate(Vector3.right * horizontal_input * Time.deltaTime * speed);
+        input_horizontal = Input.GetAxis("Horizontal");
+        transform.Translate(Vector3.right * input_horizontal * Time.deltaTime * speed);
 
         // Keep player in bounds
         if (transform.position.x < -1*x_boundary)
@@ -28,6 +34,15 @@ public class PlayerController : MonoBehaviour
         if (transform.position.x > x_boundary)
         {
             transform.position = new Vector3(x_boundary, transform.position.y, transform.position.z);
+        }
+
+        ///
+        // Projectile Logic
+        ///
+
+        // Launch a projectile on space press
+        if (Input.GetKeyDown(KeyCode.Space)) { 
+            Instantiate(prefab_projectile, transform.position, prefab_projectile.transform.rotation);
         }
     }
 }
