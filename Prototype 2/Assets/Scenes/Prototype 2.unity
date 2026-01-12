@@ -246,6 +246,54 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
+--- !u!1 &291904092
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 291904094}
+  - component: {fileID: 291904093}
+  m_Layer: 0
+  m_Name: SpawnManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &291904093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 291904092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56bb8e60096dccb4ba4843e403dad255, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpawnManager
+  animalPrefabs:
+  - {fileID: 3012425595381966607, guid: 13dc6095cfd82674fbaeca0e75f43f5a, type: 3}
+  - {fileID: 176461324072630419, guid: 2478b1d9925d8264e9f522d1fc3412bd, type: 3}
+  - {fileID: 8011728306268553768, guid: b8f5e852ce121694a8be447a4620b3e2, type: 3}
+--- !u!4 &291904094
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 291904092}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.22283, y: 0, z: 5.9772}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &425805626
 GameObject:
   m_ObjectHideFlags: 0
@@ -487,7 +535,7 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 45
-  orthographic: 0
+  orthographic: 1
   orthographic size: 10
   m_Depth: -1
   m_CullingMask:
@@ -826,6 +874,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Animal_Cow_Brown
       objectReference: {fileID: 0}
+    - target: {fileID: 5042321881654027457, guid: 13dc6095cfd82674fbaeca0e75f43f5a, type: 3}
+      propertyPath: speed
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 6576988943053686855, guid: 13dc6095cfd82674fbaeca0e75f43f5a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -17.527874
@@ -836,7 +888,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6576988943053686855, guid: 13dc6095cfd82674fbaeca0e75f43f5a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -14.273142
+      value: -12.09
       objectReference: {fileID: 0}
     - target: {fileID: 6576988943053686855, guid: 13dc6095cfd82674fbaeca0e75f43f5a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -893,7 +945,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5630323905981679734, guid: 2478b1d9925d8264e9f522d1fc3412bd, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -18.264687
+      value: -10.06
       objectReference: {fileID: 0}
     - target: {fileID: 5630323905981679734, guid: 2478b1d9925d8264e9f522d1fc3412bd, type: 3}
       propertyPath: m_LocalRotation.w
@@ -923,6 +975,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7700017838645051000, guid: 2478b1d9925d8264e9f522d1fc3412bd, type: 3}
+      propertyPath: speed
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -936,6 +992,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 619997534}
     m_Modifications:
+    - target: {fileID: 1025072344296684674, guid: b8f5e852ce121694a8be447a4620b3e2, type: 3}
+      propertyPath: speed
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 8011728306268553768, guid: b8f5e852ce121694a8be447a4620b3e2, type: 3}
       propertyPath: m_Name
       value: Dog_Doberman_01
@@ -950,7 +1010,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8022534381065385036, guid: b8f5e852ce121694a8be447a4620b3e2, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -9.263257
+      value: -2.61
       objectReference: {fileID: 0}
     - target: {fileID: 8022534381065385036, guid: b8f5e852ce121694a8be447a4620b3e2, type: 3}
       propertyPath: m_LocalRotation.w
@@ -994,3 +1054,4 @@ SceneRoots:
   - {fileID: 992285706}
   - {fileID: 1596648042}
   - {fileID: 619997534}
+  - {fileID: 291904094}
