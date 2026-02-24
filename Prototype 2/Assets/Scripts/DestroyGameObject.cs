@@ -21,6 +21,7 @@ public class DestroyGameObject : MonoBehaviour
         if (transform.position.z > boundary_top || transform.position.z < boundary_bottom)
         {
             Destroy(gameObject);
+            Debug.Log("Game Over!");
         }
     }
 }

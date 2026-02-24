@@ -5255,6 +5255,8 @@ GameObject:
   - component: {fileID: 4177789551425187171}
   - component: {fileID: 1025072344296684674}
   - component: {fileID: 722342365988614886}
+  - component: {fileID: 5367732205858370}
+  - component: {fileID: -7557920223049400927}
   m_Layer: 0
   m_Name: Dog_Doberman_01
   m_TagString: Untagged
@@ -5348,7 +5350,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 512cbdf198be71a4ba7807710c9d1458, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FoodController
-  speed: 40
+  speed: 15
 --- !u!114 &722342365988614886
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5361,6 +5363,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52b887981851b3e48b53ca4f60f27885, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DestroyGameObject
+--- !u!65 &5367732205858370
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8011728306268553768}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.11964238, y: 0.24367842, z: 0.274024}
+  m_Center: {x: -0.0010576929, y: 0.09540233, z: 0.0339036}
+--- !u!114 &-7557920223049400927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8011728306268553768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72a3d9d2be6b8184ca90a5e34f35cbea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CollisionDetection
 --- !u!1 &8043230850054126687
 GameObject:
   m_ObjectHideFlags: 0

@@ -832,6 +832,8 @@ GameObject:
   - component: {fileID: 3584349274601755275}
   - component: {fileID: 5042321881654027457}
   - component: {fileID: -219635508654440828}
+  - component: {fileID: 5171191892478426551}
+  - component: {fileID: 6080787925648819842}
   m_Layer: 0
   m_Name: Animal_Cow_Brown
   m_TagString: Untagged
@@ -889,7 +891,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 512cbdf198be71a4ba7807710c9d1458, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FoodController
-  speed: 40
+  speed: 15
 --- !u!114 &-219635508654440828
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -902,6 +904,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52b887981851b3e48b53ca4f60f27885, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DestroyGameObject
+--- !u!65 &5171191892478426551
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3012425595381966607}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 13.851844, y: 31.801699, z: 51.480194}
+  m_Center: {x: -0.16212463, y: 15.400851, z: -1.0225348}
+--- !u!114 &6080787925648819842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3012425595381966607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72a3d9d2be6b8184ca90a5e34f35cbea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CollisionDetection
 --- !u!1 &3058237342230612586
 GameObject:
   m_ObjectHideFlags: 0
