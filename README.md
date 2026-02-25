@@ -27,3 +27,8 @@ Enable Input Manager on Unity 6.1+ (Now using Input System):
 2. Find the Configuration section
 3. From the Active Input Handling dropdown, select Both
 4. Select the Apply button to confirm the change. The editor will reset
+
+Camera Positioning Tips:
+- For a top-down game, position the camera at (0, 10, 0) directly over the player and rotate it 90 degrees on the X axis
+- For a side-view game, rotate the Plane by -90 degrees on the X axis
+- For an third-person view game, move the camera up on the Y and Z axes and increase its rotation on the X axis
